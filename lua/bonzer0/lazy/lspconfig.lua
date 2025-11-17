@@ -1,4 +1,5 @@
 require("bonzer0.lspconfigs.lua_ls-vim")
+require("bonzer0.lspconfigs.cangjie")
 
 return {
     {
@@ -41,6 +42,7 @@ return {
         "neovim/nvim-lspconfig",
         dependencies = { 'saghen/blink.cmp' },
         config = function()
+            vim.lsp.enable('cangjie')
             vim.lsp.enable('lua_ls')
             vim.lsp.enable('pyright')
             -- vim.lsp.enable('ts_ls')
