@@ -3,18 +3,18 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- When using `set linebreak`
-vim.keymap.set({ "n", "x" }, "j", function()
-	return vim.v.count > 0 and "j" or "gj"
-end, { noremap = true, expr = true })
-vim.keymap.set({ "n", "x" }, "k", function()
-	return vim.v.count > 0 and "k" or "gk"
-end, { noremap = true, expr = true })
-vim.keymap.set({ "n", "x" }, "$", function()
-	return vim.v.count > 0 and "$" or "g$"
-end, { noremap = true, expr = true })
-vim.keymap.set({ "n", "x" }, "0", function()
-	return vim.v.count > 0 and "0" or "g0"
-end, { noremap = true, expr = true })
+-- vim.keymap.set({ "n", "x" }, "j", function()
+-- 	return vim.v.count > 0 and "j" or "gj"
+-- end, { noremap = true, expr = true })
+-- vim.keymap.set({ "n", "x" }, "k", function()
+-- 	return vim.v.count > 0 and "k" or "gk"
+-- end, { noremap = true, expr = true })
+-- vim.keymap.set({ "n", "x" }, "$", function()
+-- 	return vim.v.count > 0 and "$" or "g$"
+-- end, { noremap = true, expr = true })
+-- vim.keymap.set({ "n", "x" }, "0", function()
+-- 	return vim.v.count > 0 and "0" or "g0"
+-- end, { noremap = true, expr = true })
 
 -- File Exit
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
